@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Q Fortune</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+        :root {
+            --lp-ink: #1f2933;
+            --lp-ink-soft: rgba(31, 41, 51, 0.68);
+            --lp-paper: #f6efe4;
+            --lp-sand: #efe2cf;
+            --lp-teal: #0f766e;
+            --lp-saffron: #f59e0b;
+            --lp-ember: #e76f51;
+            --lp-border: rgba(31, 41, 51, 0.12);
+            --lp-shadow: 0 30px 60px rgba(31, 41, 51, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+            line-height: 1.75;
+            color: var(--lp-ink);
+            background:
+                radial-gradient(circle at 15% 10%, rgba(245, 158, 11, 0.18), transparent 50%),
+                radial-gradient(circle at 85% 15%, rgba(15, 118, 110, 0.16), transparent 45%),
+                radial-gradient(circle at 60% 80%, rgba(231, 111, 81, 0.18), transparent 50%),
+                linear-gradient(180deg, #f7f2ea 0%, #efe3d3 60%, #f7f2ea 100%);
+            min-height: 100vh;
+            padding: 64px 20px 80px;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                repeating-linear-gradient(120deg, rgba(31, 41, 51, 0.04) 0 1px, transparent 1px 24px),
+                repeating-linear-gradient(30deg, rgba(31, 41, 51, 0.03) 0 1px, transparent 1px 28px);
+            opacity: 0.35;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 880px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.82);
+            border-radius: 22px;
+            padding: 48px 50px 40px;
+            border: 1px solid var(--lp-border);
+            box-shadow: var(--lp-shadow);
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(31, 41, 51, 0.08);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--lp-ink-soft);
+            margin-bottom: 10px;
+        }
+
+        .eyebrow span {
+            font-weight: 600;
+            color: var(--lp-teal);
+        }
+
+        h1 {
+            font-family: 'Fraunces', 'Noto Sans KR', serif;
+            font-size: 2.2rem;
+            color: var(--lp-ink);
+            margin-bottom: 8px;
+        }
+
+        .app-name {
+            color: var(--lp-ink-soft);
+            font-weight: 500;
+        }
+
+        .last-updated {
+            margin-top: 14px;
+            font-size: 0.9rem;
+            color: var(--lp-ink-soft);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(31, 41, 51, 0.06);
+        }
+
+        h2 {
+            color: var(--lp-ink);
+            margin: 30px 0 12px;
+            font-size: 1.25rem;
+        }
+
+        p,
+        li {
+            color: var(--lp-ink-soft);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 16px;
+        }
+
+        .highlight {
+            background: rgba(15, 118, 110, 0.08);
+            border-left: 4px solid var(--lp-teal);
+            padding: 18px 22px;
+            margin: 24px 0;
+            border-radius: 0 12px 12px 0;
+            color: var(--lp-ink);
+        }
+
+        .contact {
+            background: rgba(31, 41, 51, 0.04);
+            padding: 20px 22px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border: 1px solid rgba(31, 41, 51, 0.08);
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 36px;
+        }
+
+        .action-primary {
+            background: var(--lp-ink);
+            color: #fff6e8;
+            border: none;
+            padding: 12px 34px;
+            border-radius: 999px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: var(--lp-shadow);
+        }
+
+        .action-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .action-hint {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: rgba(31, 41, 51, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(31, 41, 51, 0.5);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 48px 16px 60px;
+            }
+
+            .container {
+                padding: 36px 24px 32px;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="eyebrow">Q Fortune <span>Privacy</span></div>
+            <h1>Privacy Policy</h1>
+            <p class="app-name">Q Fortune – Quantum Five-Elements (Wu Xing) Fortune Analysis</p>
+            <p class="last-updated">Last Updated: January 10, 2026</p>
+        </header>
+
+        <h2>1. Overview</h2>
+        <p>
+            This Privacy Policy explains how Q Fortune (the “Company”, “we”, “us”, or “our”) collects, uses, and
+            protects
+            personal information when you use our mobile application and related services (the “Service”).
+            We are committed to complying with applicable privacy laws and safeguarding users’ rights.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We collect only the information needed to provide the Service.</p>
+        <ul>
+            <li><strong>Profile/fortune inputs:</strong> name (or nickname), gender, date of birth, calendar type
+                (solar/lunar), place of birth, and (optional) birth time.</li>
+            <li><strong>Support inquiries (if you contact us):</strong> email address, message content, app version, and
+                device information needed to troubleshoot.</li>
+            <li><strong>Purchase/Subscription status (if applicable):</strong> store receipt token or subscription
+                status to confirm entitlement (we do not store your full payment details).</li>
+        </ul>
+
+
+
+        <!-- OPTION B: Keep this block ONLY if you use analytics/crash/push or any third-party SDK that collects device/usage data. -->
+        <!--
+    <div class="highlight">
+      <strong>Device & Usage Data (Option B):</strong>
+      We may collect limited device/usage data (e.g., IP address, device identifiers, app events, crash logs) through third-party service providers
+      to operate, secure, and improve the Service. This data is typically not intended to directly identify you.
+    </div>
+    -->
+
+        <h2>3. How We Use Information</h2>
+        <ul>
+            <li>To generate personalized fortune/compatibility results based on traditional metaphysics methods.</li>
+            <li>To provide features such as daily/monthly/yearly insights and profile management.</li>
+            <li>To maintain and improve app performance, security, and user experience.</li>
+            <li>To respond to customer support requests.</li>
+            <li>To process and verify in-app purchases/subscriptions (where applicable).</li>
+        </ul>
+
+        <h2>4. Cookies, Tracking, and Behavioral Data</h2>
+        <p>
+            The Service may use technologies such as cookies or mobile identifiers (e.g., Advertising ID / IDFA)
+            depending on platform settings and SDK usage.
+            You can control these settings via your browser or device privacy controls.
+        </p>
+        <ul>
+            <li><strong>Web:</strong> You can block cookies in your browser settings (note: some features may not work).
+            </li>
+            <li><strong>Android:</strong> Settings → Privacy → Ads (reset/delete Advertising ID, depending on OS
+                version).</li>
+            <li><strong>iOS:</strong> Settings → Privacy & Security → Tracking (disable “Allow Apps to Request to
+                Track”).</li>
+        </ul>
+
+        <h2>5. Sharing and Disclosure</h2>
+        <p>
+            We do not sell your personal information. We share personal information only in the following cases:
+        </p>
+        <ul>
+            <li><strong>Service providers (processors):</strong> to operate and maintain the Service (see Section 6).
+            </li>
+            <li><strong>Legal obligations:</strong> if required by law, regulation, court order, or lawful request by
+                public authorities.</li>
+            <li><strong>Safety and protection:</strong> to protect users, the Service, or the public from harm or fraud.
+            </li>
+        </ul>
+
+        <h2>6. Service Providers (Processing on Our Behalf)</h2>
+        <p>
+            We may use third-party vendors to provide infrastructure, analytics, or app operations. These vendors
+            process data only under our instructions
+            and for the purposes described in this Policy.
+        </p>
+        <ul>
+            <li><strong>Google Analytics (optional):</strong> service usage statistics and analytics.</li>
+            <li><strong>Google Firebase (optional):</strong> app operations such as crash reporting, analytics, and/or
+                cloud functions (if enabled).</li>
+            <li><strong>Amazon Web Services (optional):</strong> infrastructure hosting or data storage (if used).</li>
+        </ul>
+        <p>
+            If you do not use any of the providers above, you may remove this section or keep only the providers you
+            actually use.
+        </p>
+
+        <h2>7. International Data Transfers</h2>
+        <p>
+            We protect your fortune profile data in accordance with this Policy.
+            If you enable third-party providers, some data may be processed in countries other than where you live
+            (for example, the United States), depending on vendor infrastructure.
+        </p>
+        <ul>
+            <li><strong>Purpose:</strong> analytics, service operations, crash diagnostics, and security.</li>
+            <li><strong>Data types (may include):</strong> IP address, device identifiers, logs, app events, crash data.
+            </li>
+            <li><strong>Transfer method:</strong> encrypted network transmission.</li>
+            <li><strong>Retention:</strong> as needed to provide the service or until you delete the app/account or
+                withdraw consent (where applicable).</li>
+        </ul>
+
+        <h2>8. Data Retention</h2>
+        <ul>
+            <li><strong>Fortune profile data:</strong> retained until you delete it
+                in-app or uninstall the app.</li>
+            <li><strong>Support inquiries:</strong> retained only as long as needed to respond and resolve the issue,
+                unless a longer period is required by law.</li>
+            <li><strong>Legal compliance:</strong> we may retain certain records if required by applicable laws (e.g.,
+                transaction records, dispute handling).</li>
+        </ul>
+
+        <h2>9. Your Rights and Choices</h2>
+        <p>
+            Depending on your location, you may have rights such as access, correction, deletion, restriction, or
+            objection to certain processing.
+            You can exercise your rights as follows:
+        </p>
+        <ul>
+            <li><strong>Delete local data:</strong> use “Reset data” (or similar) in the app settings, or uninstall the
+                app.</li>
+            <li><strong>Opt out of tracking:</strong> use your device privacy settings (see Section 4).</li>
+            <li><strong>Contact us:</strong> email us to request access/deletion for any data we may hold (e.g., support
+                emails).</li>
+        </ul>
+
+        <h2>10. Security Measures</h2>
+        <p>
+            We implement reasonable administrative, technical, and physical safeguards to protect information from loss,
+            theft,
+            misuse, unauthorized access, disclosure, alteration, or destruction. This may include encryption, access
+            controls,
+            and secure storage mechanisms where applicable.
+        </p>
+
+        <h2>11. Children’s Privacy</h2>
+        <p>
+            The Service is not intended for children under the age of 14 (or the equivalent minimum age in your
+            jurisdiction).
+            We do not knowingly collect personal information from children without appropriate consent.
+        </p>
+
+        <h2>12. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. When we do, we will revise the “Last Updated” date at
+            the top of this page.
+            Material changes may be notified through the app or other appropriate means.
+        </p>
+
+        <div class="contact">
+            <h2>13. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our privacy practices, contact us at:</p>
+            <p><strong>Email:</strong> skyutech@gmail.com</p>
+            <p><strong>Data Protection Contact (optional):</strong> If you appoint a privacy officer, you may add their
+                name/title here.</p>
+        </div>
+
+        <div class="actions">
+            <button class="action-primary" onclick="window.close()">Close</button>
+            <p class="action-hint">(If the button doesn’t work, please close this browser tab.)</p>
+        </div>
+
+        <footer>
+            <p>© 2026 Q Fortune. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html> 
